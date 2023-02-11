@@ -4,7 +4,7 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: 'src/_assets/images/cms'
+media_folder: 'content/_assets/images/cms'
 public_folder: '/cms/'
 
 editor:
@@ -16,7 +16,7 @@ collections:
   - name: pages
     label: Pages
     label_singular: page
-    folder: src/pages
+    folder: content/pages
     create: true
     slug: '{{slug}}'
     fields:
@@ -48,7 +48,7 @@ collections:
   - name: shows
     label: Shows
     label_singular: Show
-    folder: src/shows
+    folder: content/shows
     create: true
     slug: '{{slug}}'
     fields:
@@ -60,11 +60,13 @@ collections:
         picker_utc: true
       - name: feature
         widget: boolean
+        required: false
 
       - name: image
         widget: object
         summary: '[{{fields.src}}] {{fields.alt}}'
         collapsed: true
+        required: false
         fields:
           - name: src
             widget: image
@@ -78,9 +80,11 @@ collections:
       - name: gallery
         widget: object
         summary: '{{ caption }}'
+        required: false
         collapsed: true
         fields:
           - name: caption
+            required: false
           - name: photos
             widget: list
             allow_add: true
