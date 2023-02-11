@@ -8,4 +8,4 @@ image:
   alt: a bowerbird nest with an arch of twigs surrounded by blue ceramic shards
 summary: A true love story, told through dance, poetry, music, and sculpture.
 ---
-Opening April 7, at Buntport Theater.
+Opening April 7, at Buntport Theater. Etc Etc.
