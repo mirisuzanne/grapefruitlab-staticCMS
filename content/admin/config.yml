@@ -91,6 +91,7 @@ collections:
             fields:
               - name: image
                 widget: object
+                required: false
                 summary: '[{{fields.src}}] {{fields.alt}}'
                 fields:
                   - name: src
