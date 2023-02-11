@@ -1,0 +1,39 @@
+{
+  "name": "grapefruitlab-staticcms",
+  "version": "1.0.0",
+  "description": "a new site for grapefruit lab",
+  "main": "index.js",
+  "author": "miriam suzanne <miriam@oddbird.net>",
+  "license": "ISC",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirisuzanne/grapefruitlab-staticCMS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mirisuzanne/grapefruitlab-staticCMS/issues"
+  },
+  "homepage": "https://github.com/mirisuzanne/grapefruitlab-staticCMS#readme",
+  "scripts": {
+    "start": "eleventy --serve --incremental",
+    "build": "eleventy",
+    "lint": "stylelint \"**/*.scss\" --fix"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-img": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@staticcms/core": "^1.2.8",
+    "date-fns": "^2.29.3",
+    "date-fns-tz": "^2.0.0",
+    "js-yaml": "^4.1.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.6",
+    "netlify-plugin-cache": "^1.0.3",
+    "sass": "^1.58.0",
+    "stylelint": "^14.2.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-scss": "^4.1.0"
+  }
+}

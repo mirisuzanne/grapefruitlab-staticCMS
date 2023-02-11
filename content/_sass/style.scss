@@ -1,0 +1,17 @@
+@use 'sass:meta';
+
+@layer config {
+  @include meta.load-css('config');
+}
+
+@layer init {
+  @include meta.load-css('init');
+}
+
+@layer layout {
+  @include meta.load-css('layout');
+}
+
+@layer components {
+  @include meta.load-css('components');
+}

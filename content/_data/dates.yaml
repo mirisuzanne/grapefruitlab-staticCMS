@@ -1,0 +1,3 @@
+short: 'PP'
+long: 'MMMM d, y'
+default: 'MMMM d, y'

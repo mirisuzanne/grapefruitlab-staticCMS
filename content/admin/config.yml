@@ -1,0 +1,94 @@
+# Run 'npx static-cms-proxy-server' for local backend
+# local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+media_folder: 'src/_assets/images/cms'
+public_folder: '/cms/'
+
+editor:
+  preview: false
+  frame: false
+
+collections:
+  # pages ---------
+  - name: pages
+    label: Pages
+    label_singular: page
+    folder: src/pages
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - name: title
+      - name: subtitle
+      - name: date
+        widget: datetime
+        picker_utc: true
+      - name: permalink
+        widget: string
+      - name: nav
+        widget: number
+        value_type: int
+      - name: image
+        widget: object
+        summary: '[{{fields.src}}] {{fields.alt}}'
+        collapsed: true
+        fields:
+          - name: src
+            widget: image
+          - name: alt
+
+      - name: summary
+        widget: text
+      - name: body
+        widget: markdown
+
+  # shows ---------
+  - name: shows
+    label: Shows
+    label_singular: Show
+    folder: src/shows
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - name: title
+      - name: subtitle
+      - name: date
+        label: premier
+        widget: datetime
+        picker_utc: true
+      - name: feature
+        widget: boolean
+
+      - name: image
+        widget: object
+        summary: '[{{fields.src}}] {{fields.alt}}'
+        collapsed: true
+        fields:
+          - name: src
+            widget: image
+          - name: alt
+
+      - name: summary
+        widget: text
+      - name: body
+        widget: markdown
+
+      - name: gallery
+        widget: object
+        summary: '{{ caption }}'
+        collapsed: true
+        fields:
+          - name: caption
+          - name: photos
+            widget: list
+            allow_add: true
+            fields:
+              - name: image
+                widget: object
+                summary: '[{{fields.src}}] {{fields.alt}}'
+                fields:
+                  - name: src
+                    widget: image
+                  - name: alt
