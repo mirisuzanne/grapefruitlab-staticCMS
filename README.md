@@ -1,2 +1,4 @@
 # grapefruitlab-staticCMS
-A new grapefruitlab site, using StaticCMS
+
+A new grapefruitlab site,
+using Eleventy and StaticCMS
