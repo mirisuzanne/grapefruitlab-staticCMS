@@ -24,6 +24,8 @@
     "@11ty/eleventy-img": "^3.0.0",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@staticcms/core": "^1.2.8",
+    "accoutrement": "^4.0.4",
+    "cssremedy": "^0.1.0-beta.2",
     "date-fns": "^2.29.3",
     "date-fns-tz": "^2.0.0",
     "js-yaml": "^4.1.0",
