@@ -87,6 +87,7 @@ collections:
             required: false
           - name: photos
             widget: list
+            required: false
             allow_add: true
             fields:
               - name: image
